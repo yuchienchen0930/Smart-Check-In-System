@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'smartCheckin.lang';
-export const DEFAULT_LANG = 'zh-TW';
+export const DEFAULT_LANG = 'en';
 export const SUPPORTED_LANGS = ['zh-TW', 'en', 'zh-CN', 'ja'];
 export const LANG_NAMES = { 'zh-TW': '繁體中文', en: 'English', 'zh-CN': '简体中文', ja: '日本語' };
 
@@ -265,6 +265,7 @@ const dict = {
   'eventPicker.cancelBtn': { 'zh-TW': '取消活動', en: 'Cancel event', 'zh-CN': '取消活动', ja: 'イベントを取消' },
   'eventPicker.confirmDelete': { 'zh-TW': '確定要刪除這個活動嗎？此動作無法復原。', en: 'Delete this event? This cannot be undone.', 'zh-CN': '确定要删除这个活动吗？此操作无法复原。', ja: 'このイベントを削除しますか？元に戻せません。' },
   'eventPicker.confirmCancel': { 'zh-TW': '確定要取消這個活動嗎？活動會保留在歷史紀錄中。', en: 'Cancel this event? It will remain visible in History.', 'zh-CN': '确定要取消这个活动吗？活动会保留在历史记录中。', ja: 'このイベントを取り消しますか？履歴には残ります。' },
+  'eventPicker.noEventsYet': { 'zh-TW': '請先到活動管理新增活動', en: 'Please go to Event Management to create an event first', 'zh-CN': '请先到活动管理新增活动', ja: 'まずイベント管理でイベントを作成してください' },
   'eventPicker.noResults': { 'zh-TW': '找不到符合條件的活動', en: 'No matching events found', 'zh-CN': '找不到符合条件的活动', ja: '該当するイベントが見つかりません' },
   'eventPicker.selectPlaceholder': { 'zh-TW': '請先選擇活動', en: 'Please select an event', 'zh-CN': '请先选择活动', ja: 'イベントを選択してください' },
 

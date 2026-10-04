@@ -38,9 +38,9 @@ export function renderMetaRow(event) {
 }
 
 // mode: 'manage' (活動管理列表：檢視/刪除/取消) | 'pick' (報到選活動：日期方塊卡片，點擊選取)
-export function renderEventCardList(container, events, { mode, nowIso, activeEventId, onSelect, onDelete, onCancel } = {}) {
+export function renderEventCardList(container, events, { mode, nowIso, activeEventId, onSelect, onDelete, onCancel, emptyKey = 'eventPicker.noResults' } = {}) {
   if (events.length === 0) {
-    container.innerHTML = `<p class="hint empty-hint">${t('eventPicker.noResults')}</p>`;
+    container.innerHTML = `<p class="hint empty-hint">${t(emptyKey)}</p>`;
     return;
   }
 

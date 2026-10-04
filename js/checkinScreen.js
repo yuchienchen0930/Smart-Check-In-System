@@ -27,6 +27,7 @@ function renderPickerList() {
   const filtered = filterEvents(events, filters);
   renderEventCardList(container, filtered, {
     mode: 'pick',
+    emptyKey: getEvents().length === 0 ? 'eventPicker.noEventsYet' : 'eventPicker.noResults',
     activeEventId: getActiveEventId(),
     onSelect: id => {
       setActiveEventId(id);
